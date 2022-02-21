@@ -1,0 +1,14 @@
+program Mdiapp;
+
+uses
+  Forms,
+  MAIN in 'Main.pas' {MainForm},
+  CHILDWIN in 'CHILDWIN.PAS' {MDIChild};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.

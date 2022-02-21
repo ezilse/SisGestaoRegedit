@@ -1,0 +1,17 @@
+program GravaRegedit;
+
+uses
+  Forms,
+  Main in 'Main.pas' {MainForm},
+  CHILDWIN in 'CHILDWIN.PAS' {MDIChild},
+  Vcl.Themes,
+  Vcl.Styles;
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  TStyleManager.TrySetStyle('Amakrits');
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.
